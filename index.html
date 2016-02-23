@@ -42,12 +42,12 @@
             <li  id ="browserInfo" role="presentation"><a id="browserLink" href="#">Browser Info</a></li>
           </ul>
         </nav>  --> 
-        <h3 class="text-muted">Farm</h3>
+        <h3 class="text-muted">Euclidean Methods</h3>
       </div>
 
       <div class="jumbotron">
         <h1>Harvest Total Calulator</h1>
-        <p class="lead">Because why do math?</p>
+        <p class="lead"><em>Beta 0.1</em></p>
       </div>
 
       <div class="row marketing">
@@ -57,12 +57,12 @@
               <h3 id="panelTitle" class="panel-title">Enter values below to calculate harvest total</h3>
             </div> 
             <div id="Calc">
-				      <input id="sfIn" type="number" name="squarefoot" placeholder="Total Square Feet">
+				      <input id="sfIn" type="number" name="squarefoot" placeholder="Total Square Feet" step="any">
 				      <br>
-				      <input id="plantIn" type="number" name="plants" placeholder="Plants/SqFoot">
-              <input type="checkbox" name="micrograins"> Micrograins?
+				      <input id="plantIn" type="number" name="plants" placeholder="Plants/SqFoot" step="any">
+              <input id= "micrograinsCheck" type="checkbox" name="micrograins"> Micrograins?
               <br>
-				      <input id="priceIn" type="number" name ="price" placeholder="Price/Unit">
+				      <input id="priceIn" type="number" name ="price" placeholder="Price/Unit" step="0.01">
 				      <br>
 				      <button id="calcButton" type="button" 
 					       class="btn btn-lg btn-success">Calculate</button>
