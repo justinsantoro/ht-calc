@@ -10,8 +10,14 @@ input{
 	margin: 2px;
 	
 }
+#empty{
+	display: none;
+	margin: 10px;
+	cursor: pointer !important;
+}
 #inputs{
 	display: none;
+	margin-top: 10px;
 	margin: 2px;
 }
 #results{
