@@ -1,0 +1,98 @@
+button{
+	width: 100;
+	margin: 3px;
+}
+nav{
+	margin: 5px;
+	border-radius: 10px;
+}
+input{
+	margin: 2px;
+	
+}
+#inputs{
+	display: none;
+	margin: 2px;
+}
+#results{
+	display: none;
+	margin: 2px;
+}
+/*BUTTONS*/
+#Calc{
+	display: block;
+	margin: 10px;
+	width:auto !important;
+}
+
+#calcButton{
+	width:auto !important;
+	margin-right: 1px;
+	margin-bottom: 5px;
+}
+#clearButton{
+	display: none;
+	width: auto !important;
+	margin-left: 1px;
+	margin-bottom: 5px;
+	margin-right: 120px;
+}
+#panelHead{
+	background-color: silver !important;
+	border-color: silver !important;
+	color: white !important;
+}
+#panel{
+	border-color: silver !important;
+	background-color: white;
+	display: block;
+	margin: 10px;
+}
+#gameStart{
+	display: block;
+}
+#gameStop{
+	display: none;
+}
+#gamePanel{
+	display: none;
+	margin: 50px;
+}
+#gameRunning{
+	display:none;
+	margin: 5px;
+}
+#gameStopped{
+	display:none;
+}
+#bInfo{
+	display: none;
+	margin-top: 10px !important;
+	margin: 20px;
+}
+#cookieCheck, #browserInfo{
+	background-color: #bfbfbf !important;
+	
+}
+#cookieVerify{
+	display:none;
+	background-color: green !important;
+}
+#cookieClear{
+	display:none;
+	background-color: red !important;
+}
+a{
+	color: white !important;
+}
+#goodBrowser{
+	display: none;
+}
+#goodBrowser.hover{
+	cursor: pointer;
+}
+#greeting{
+	display: none;
+
+}
+
