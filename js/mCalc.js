@@ -10,6 +10,9 @@ $(document).ready(function ()
 		$("#herbCalcButtonDead").show();
 	});
 					
+	$("#empty").click(function(){
+		$("#empty").hide();
+	});
 
 	$("#calcButton").click(function()
 	{ //start herb calculate
@@ -28,7 +31,8 @@ $(document).ready(function ()
 		// Now compute plantsPer
 
 		//check for micrograins
-		if(micrograins === true){
+		if(micrograins === true)
+		{
 			var sf = document.getElementsByName('squarefoot')[0].value / 2;
 		}
 		else
@@ -37,10 +41,9 @@ $(document).ready(function ()
 		}
 
 		// Check that all inputs are filled
-		if((sfTotal === 0) || (plants === 0) || (price === 0)) 
+		if((sfTotal === "") || (plants === "") || (price === "")) 
 		{
-			ClearResults();
-			alert("Please enter all values");
+			$("#empty").show();
 			return false;
 		}
 
