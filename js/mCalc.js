@@ -20,7 +20,7 @@ $(document).ready(function ()
 		
 		var plants = document.getElementsByName('plants')[0].value;
 		var price = document.getElementsByName('price')[0].value;
-		var micrograins = document.getElementsByName('micrograins')[0].value;
+		var  micrograins = $("#micrograinsCheck").prop('checked');
 		var plantsPer = 0;
 		var ht = 0;
 		var sfTotal = document.getElementsByName('squarefoot')[0].value;
@@ -28,7 +28,7 @@ $(document).ready(function ()
 		// Now compute plantsPer
 
 		//check for micrograins
-		if(micrograins === "on"){
+		if(micrograins === true){
 			var sf = document.getElementsByName('squarefoot')[0].value / 2;
 		}
 		else
@@ -72,7 +72,7 @@ $(document).ready(function ()
 				document.getElementById("priceSpan").innerText = "Price/Unit =  " + price;
 				
 				$("#results").show();
-				if(micrograins === "on"){
+				if(micrograins === true){
 					document.getElementById("htSpan").innerText = "(" + (sf)  + " sq * " + plants + " plants)"  +price +" dollars/Oz = $" + ht;  
 				}
 				else
